@@ -26,5 +26,9 @@ function projectClick(e) { 
     e.preventDefault();
     // In an event handler, $(this) refers to 
     // the object that triggered the event 
+		var projectTitle = $(this).find("p").text();
+		var jumbotronHeader = $(".jumbotron h1");
+		// jumbotronHeader =
+		jumbotronHeader.text(projectTitle)
     $(this).css("background-color", "#7fff00");
 }
